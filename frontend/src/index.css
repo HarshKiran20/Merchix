@@ -1,0 +1,42 @@
+@tailwind base;
+@layer base {
+  :root {
+    --brand-primary: #1C1C1C;
+    --brand-accent: #8B5E3C;
+    --brand-muted: #6B6B6B;
+    --brand-bg-soft: #F7F7F7;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Global polish ===== */
+
+body {
+  background-color: #ffffff;
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.01em;
+}
+
+/* Page fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out;
+}
+
+
